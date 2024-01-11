@@ -375,3 +375,75 @@ h5 {
 .forColor6:checked ~ .infoWrap .btn:before {
   background-color: #5d6160;
 }
+
+@media screen and (max-width: 991px) {
+  .container {
+    margin: o auto;
+    text-align: center;
+    max-width: calc(100% - 40px);
+    width: 370px;
+
+  }
+
+  label.firstColor{
+    margin-left: 0;
+  }
+  .infoWrap{
+    margin-left: 0;
+    width: 370px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .imgWrap{
+    width: 375px;
+    height: 308px;
+    left: 50%;
+    margin-left: -190px;
+  }
+
+  .mobMargin{
+    margin-top: 320px;
+
+  }
+
+  .descBtn:checked + label,
+  .descBtn:not(:checked) + label{
+    margin-right: 15px;
+    margin-left: 15px;
+
+  }
+
+  .colorBtn:checked + label,
+  .colorBtn:not(:checked) + label{
+    height: 40px;
+    width: 40px;
+    margin: 5px auto;
+    text-align: center;
+  }
+
+  .sectionInline{
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width:575px){
+  .container{
+    width: 280px;
+  }
+  .infoWrap{
+    width: 280px;
+  }
+  .colorBtn:checked + label,
+  .colorBtn:not(:checked) + label{
+    height: 30px;
+    width: 30px;
+  }
+  .sectionInline p span{
+    font-size: 24px;
+    line-height: 1.1;
+  }
+  .sectionInline p{
+    font-size: 14px;
+  }
+}
